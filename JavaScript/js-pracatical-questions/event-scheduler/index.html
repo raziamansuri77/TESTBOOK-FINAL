@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event-scheduler</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Add Event</h2>
+      <form id="event-form">
+        <label for="event-name">Event Name:</label>
+        <input type="text" id="event-name" required />
+        <label for="event-datetime">Date and Time:</label>
+        <input type="datetime-local" id="event-datetime" required />
+        <button type="submit">Add Event</button>
+      </form>
+
+      <h2>Upcoming Events</h2>
+      <ul id="event-list" class="event-list"></ul>
+    </div>
+  </body>
+</html>

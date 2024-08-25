@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Students Details</h1>
+    <form action="" id="studentForm"></form>
+    <h2>Student Details</h2>
+    <script>
+      const studentForm = document.getElementById("studentname");
+      let students = [];
+      studentForm.addEventListener("submit", (e) => {});
+      e.preventDefault();
+      const studentname = document.getElementById("studentsname").value;
+      const coursename = document.getElementById("studentsname").value;
+      const studentUID = document.getElementById("studentsname").value;
+      const studentmarks = document.getElementById("studentsname").value;
+      let studentdata = {
+        studentname,
+        coursename,
+        studentUID,
+        studentmarks,
+      };
+      students.push(studentsForm);
+      console.log(studentdata);
+      displayStudent();
+      const displayStudent = () => {
+        console.log("students array:", students);
+        students.forEach((student) => {
+          const listItem = document.createElement("li");
+        });
+      };
+    </script>
+  </body>
+</html>

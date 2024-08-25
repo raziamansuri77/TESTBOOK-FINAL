@@ -1,0 +1,756 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  font-weight: 100;
+}
+:root {
+  --color-1: #648880;
+  ---color-2: #fff;
+  --bg-1: #293f50;
+  --bg-2: #eeeed0;
+  --bg-3: #a9d6b3;
+  --color-3: #a9b2b9;
+}
+.nav-box1 {
+  font-weight: 400;
+}
+.nav-box2-text1 {
+  font-weight: 400;
+}
+
+.speaker-main {
+  width: 100vw;
+  background-color: var(--bg-1);
+  color: var(---color-2);
+  display: flex;
+  justify-content: center;
+}
+.speaker-container {
+  font-weight: 400;
+  width: 60%;
+}
+.speaker-header-main {
+  background-image: linear-gradient(to right, #a9d6b3, #eeeed0);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.speaker-header-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 50px 0px;
+}
+.speaker-header-text1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--color-1);
+}
+.speaker-header-text2 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-1);
+}
+.speakers-card-main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.speakers-card-container {
+  width: 60%;
+}
+.speaker-card1 {
+  display: grid;
+  gap: 30px;
+  padding: 50px 0px;
+  grid-template-columns: auto 30%;
+}
+.card1-box1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 20px;
+  color: var(--color-3);
+}
+
+.text1-a {
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--color-1);
+}
+.text1-b {
+  margin-top: 10px;
+  font-weight: 400;
+}
+.card1-box1-text1 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.card-bg-box {
+  margin-top: 100px;
+  width: 100%;
+  height: 200px;
+  border: 1px solid var(--color-3);
+  position: relative;
+  border-radius: 10px;
+}
+.card-dp {
+  width: 120px;
+  height: 120px;
+  background-color: floralwhite;
+  border-radius: 50%;
+  position: absolute;
+  left: 80px;
+  top: -40px;
+}
+.card-dp-text {
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--color-1);
+  font-size: 18px;
+  text-align: center;
+}
+.dp1 {
+  background-image: url("./images/aaron-irizarry.jpg");
+  background-size: 100% 100%;
+}
+.dp2 {
+  background-image: url("./images/adam-connor.jpg");
+  background-size: 100% 100%;
+}
+.dp3 {
+  background-image: url("./images/aj-self.jpg");
+  background-size: 100% 100%;
+}
+.dp4 {
+  background-image: url("./images/arman-ghosh.jpg");
+  background-size: 100% 100%;
+}
+.dp5 {
+  background-image: url("./images/bermon-painter.jpg");
+  background-size: 100% 100%;
+}
+.dp6 {
+  background-image: url("./images/shay-howe.jpg");
+  background-size: 100% 100%;
+}
+
+/* ---------------------------------------screen size 1024px------------------------------------------------- */
+
+@media screen and (max-width: 1024px) {
+  .nav-box1 {
+    font-weight: 400;
+  }
+  .nav-links {
+    color: var(--text-color1);
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+  }
+  .nav-links a {
+    color: var(--text-color2);
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 10px;
+
+    transition: all 0.2s;
+  }
+  a:hover {
+    color: var(--text-color1);
+  }
+  .header-text {
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-text1 {
+    font-size: 20px;
+    color: var(--text-color1);
+  }
+  .header-text2 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .speaker-main {
+    width: 100vw;
+    background-color: var(--bg-1);
+    color: var(---color-2);
+    display: flex;
+    justify-content: center;
+  }
+  .speaker-container {
+    font-weight: 400;
+    width: 100%;
+    padding: 0px 40px;
+  }
+  .speaker-header-main {
+    background-image: linear-gradient(to right, #a9d6b3, #eeeed0);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .speaker-header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 10px;
+  }
+  .speaker-header-text1 {
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--color-1);
+  }
+  .speaker-header-text2 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--color-1);
+  }
+  .speakers-card-main {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .speakers-card-container {
+    width: 100%;
+    padding: 0px 40px;
+  }
+  .speaker-card1 {
+    display: grid;
+    gap: 30px;
+    padding: 20px 0px;
+    grid-template-columns: auto 30%;
+  }
+  .card1-box1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    color: var(--color-3);
+  }
+
+  .text1-a {
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--color-1);
+  }
+  .text1-b {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .card1-box1-text1 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .card-bg-box {
+    margin-top: 100px;
+    width: 100%;
+    height: 180px;
+    border: 1px solid var(--color-3);
+    position: relative;
+    border-radius: 10px;
+  }
+  .card-dp {
+    width: 100px;
+    height: 100px;
+    background-color: floralwhite;
+    border-radius: 50%;
+    position: absolute;
+    left: 95px;
+    top: -45px;
+  }
+  .card-dp-text {
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-1);
+    font-size: 15px;
+    text-align: center;
+  }
+  .dp1 {
+    background-image: url("./images/aaron-irizarry.jpg");
+    background-size: 100% 100%;
+  }
+  .dp2 {
+    background-image: url("./images/adam-connor.jpg");
+    background-size: 100% 100%;
+  }
+  .dp3 {
+    background-image: url("./images/aj-self.jpg");
+    background-size: 100% 100%;
+  }
+  .dp4 {
+    background-image: url("./images/arman-ghosh.jpg");
+    background-size: 100% 100%;
+  }
+  .dp5 {
+    background-image: url("./images/bermon-painter.jpg");
+    background-size: 100% 100%;
+  }
+  .dp6 {
+    background-image: url("./images/shay-howe.jpg");
+    background-size: 100% 100%;
+  }
+  .footer-main {
+    width: 100%;
+    color: var(--text-color2);
+    display: flex;
+    justify-content: center;
+    background-color: var(--background);
+  }
+  .footer-container {
+    width: 100%;
+    display: flex;
+  }
+  .footer-text1 {
+    color: var(--text-color1);
+    font-size: 12px;
+  }
+  .footer-links {
+    display: flex;
+    gap: 10px;
+  }
+  .footer-links a {
+    color: var(--text-color2);
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-weight: 200;
+    font-size: 8px;
+    font-weight: 400;
+    transition: all 0.2s;
+  }
+  a:hover {
+    color: var(--text-color1);
+  }
+}
+
+/* ---------------------------------------screen size 768px------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+  .nav-box1 {
+    font-weight: 400;
+  }
+  .nav-links {
+    color: var(--text-color1);
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+  }
+  .nav-links a {
+    color: var(--text-color2);
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 10px;
+
+    transition: all 0.2s;
+  }
+  a:hover {
+    color: var(--text-color1);
+  }
+  .header-text {
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-text1 {
+    font-size: 20px;
+    color: var(--text-color1);
+  }
+  .header-text2 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .speaker-main {
+    width: 100vw;
+    background-color: var(--bg-1);
+    color: var(---color-2);
+    display: flex;
+    justify-content: center;
+  }
+  .speaker-container {
+    font-weight: 400;
+    width: 100%;
+    padding: 0px 40px;
+  }
+  .speaker-header-main {
+    background-image: linear-gradient(to right, #a9d6b3, #eeeed0);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .speaker-header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 10px;
+  }
+  .speaker-header-text1 {
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--color-1);
+  }
+  .speaker-header-text2 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--color-1);
+  }
+  .speakers-card-main {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .speakers-card-container {
+    width: 100%;
+    padding: 0px 40px;
+  }
+  .speaker-card1 {
+    display: grid;
+    gap: 30px;
+    padding: 20px 0px;
+    grid-template-columns: auto 30%;
+  }
+  .card1-box1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    color: var(--color-3);
+  }
+
+  .text1-a {
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--color-1);
+  }
+  .text1-b {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .card1-box1-text1 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .card-bg-box {
+    margin-top: 100px;
+    width: 100%;
+    height: 150px;
+    border: 1px solid var(--color-3);
+    position: relative;
+    border-radius: 10px;
+  }
+  .card-dp {
+    width: 100px;
+    height: 100px;
+    background-color: floralwhite;
+    border-radius: 50%;
+    position: absolute;
+    left: 65px;
+    top: -45px;
+  }
+  .card-dp-text {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-1);
+    font-size: 15px;
+    text-align: center;
+  }
+  .dp1 {
+    background-image: url("./images/aaron-irizarry.jpg");
+    background-size: 100% 100%;
+  }
+  .dp2 {
+    background-image: url("./images/adam-connor.jpg");
+    background-size: 100% 100%;
+  }
+  .dp3 {
+    background-image: url("./images/aj-self.jpg");
+    background-size: 100% 100%;
+  }
+  .dp4 {
+    background-image: url("./images/arman-ghosh.jpg");
+    background-size: 100% 100%;
+  }
+  .dp5 {
+    background-image: url("./images/bermon-painter.jpg");
+    background-size: 100% 100%;
+  }
+  .dp6 {
+    background-image: url("./images/shay-howe.jpg");
+    background-size: 100% 100%;
+  }
+  .footer-main {
+    width: 100%;
+    color: var(--text-color2);
+    display: flex;
+    justify-content: center;
+    background-color: var(--background);
+  }
+  .footer-container {
+    width: 100%;
+    display: flex;
+  }
+  .footer-text1 {
+    color: var(--text-color1);
+    font-size: 12px;
+  }
+  .footer-links {
+    display: flex;
+    gap: 10px;
+  }
+  .footer-links a {
+    color: var(--text-color2);
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-weight: 200;
+    font-size: 8px;
+    font-weight: 400;
+    transition: all 0.2s;
+  }
+  a:hover {
+    color: var(--text-color1);
+  }
+}
+
+/* ---------------------------------------screen size 600px------------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+  .nav-box2 {
+    display: flex;
+    gap: 15px !important;
+  }
+  .nav-links {
+    color: var(--text-color1);
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+  }
+  .nav-links a {
+    color: var(--text-color2);
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 10px;
+
+    transition: all 0.2s;
+  }
+  a:hover {
+    color: var(--text-color1);
+  }
+  .header-text {
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nav-box2-text1 {
+    font-size: 10px !important;
+  }
+  .header-text1 {
+    font-size: 20px;
+    color: var(--text-color1);
+  }
+  .header-text2 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .speaker-main {
+    width: 100vw;
+    background-color: var(--bg-1);
+    color: var(---color-2);
+    display: flex;
+    justify-content: center;
+  }
+  .speaker-container {
+    font-weight: 400;
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .speaker-header-main {
+    background-image: linear-gradient(to right, #a9d6b3, #eeeed0);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .speaker-header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 10px;
+  }
+  .speaker-header-text1 {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-1);
+  }
+  .speaker-header-text2 {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--color-1);
+  }
+  .speakers-card-main {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .speakers-card-container {
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .speaker-card1 {
+    display: grid;
+    gap: 30px;
+    padding: 20px 0px;
+    grid-template-columns: auto 30%;
+  }
+  .card1-box1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    color: var(--color-3);
+  }
+
+  .text1-a {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-1);
+  }
+  .text1-b {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .card1-box1-text1 {
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .card-bg-box {
+    margin-top: 100px;
+    width: 100%;
+    height: 80px;
+    border: 1px solid var(--color-3);
+    position: relative;
+    border-radius: 10px;
+  }
+  .card-dp {
+    width: 50px;
+    height: 50px;
+    background-color: floralwhite;
+    border-radius: 50%;
+    position: absolute;
+    left: 35px;
+    top: -25px;
+  }
+  .card-dp-text {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-1);
+    font-size: 8px;
+    text-align: center;
+  }
+  .dp1 {
+    background-image: url("./images/aaron-irizarry.jpg");
+    background-size: 100% 100%;
+  }
+  .dp2 {
+    background-image: url("./images/adam-connor.jpg");
+    background-size: 100% 100%;
+  }
+  .dp3 {
+    background-image: url("./images/aj-self.jpg");
+    background-size: 100% 100%;
+  }
+  .dp4 {
+    background-image: url("./images/arman-ghosh.jpg");
+    background-size: 100% 100%;
+  }
+  .dp5 {
+    background-image: url("./images/bermon-painter.jpg");
+    background-size: 100% 100%;
+  }
+  .dp6 {
+    background-image: url("./images/shay-howe.jpg");
+    background-size: 100% 100%;
+  }
+  .footer-main {
+    width: 100%;
+    color: var(--text-color2);
+    display: flex;
+    justify-content: center;
+    background-color: var(--background);
+  }
+  .footer-container {
+    width: 100%;
+    height: 10vh !important;
+    display: flex;
+  }
+  .footer-text1 {
+    color: var(--text-color1);
+    font-size: 12px;
+  }
+  .footer-links {
+    display: flex;
+    gap: 10px;
+  }
+  .footer-links a {
+    color: var(--text-color2);
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-weight: 200;
+    font-size: 8px;
+    transition: all 0.2s;
+  }
+  a:hover {
+    color: var(--text-color1);
+  }
+}

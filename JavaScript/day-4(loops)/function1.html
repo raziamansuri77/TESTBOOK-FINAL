@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Immediate Invoke Function Expression(IIFE)</title>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <script>
+      // let name = "Razia";
+      // let fruitName = prompt("Enter your fruit:");
+      //(function fruit() {
+      // document.getElementById(
+      //   "demo"
+      //).innerHTML = `${name} likes ${fruitName}`;
+      //})(name, fruitName);//
+      function outer() {
+        let a = 9;
+        console.log("outer function is:", a);
+        function inner() {
+          let b = 19;
+          console.log("inner function is:", b);
+        }
+        return inner;
+      }
+      outer()();
+    </script>
+  </body>
+</html>

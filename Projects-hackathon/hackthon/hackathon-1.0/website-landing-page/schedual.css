@@ -1,0 +1,613 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  font-weight: 100;
+}
+:root {
+  --color-1: #648880;
+  ---color-2: #fff;
+  --bg-1: #293f50;
+  --bg-2: #eeeed0;
+  --bg-3: #a9d6b3;
+  --color-3: #a9b2b9;
+}
+
+.nav-box1 {
+  font-weight: 400;
+}
+.nav-box2-text1 {
+  font-weight: 400;
+}
+.schedule-main {
+  width: 100vw;
+  background-color: var(--bg-1);
+  color: var(---color-2);
+  display: flex;
+  justify-content: center;
+}
+.schedule-container {
+  font-weight: 300;
+  width: 60%;
+}
+.schedule-header-main {
+  background-image: linear-gradient(to right, #a9d6b3, #eeeed0);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.schedule-header-container {
+  font-weight: 400;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 50px 0px;
+}
+.schedule-header-text1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--color-1);
+}
+.schedule-header-text2 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  color: gray;
+}
+.schedule-content-main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.schedule-content-container {
+  width: 60%;
+}
+table {
+  width: 1000px;
+  height: 500px;
+}
+.table1 {
+  padding: 20px 0px;
+}
+.table2 {
+  padding: 20px 0px;
+
+  height: 1000px;
+}
+.width {
+  width: 100%;
+}
+tr {
+  height: 50px;
+}
+.border {
+  width: 90%;
+  border-bottom: 1px solid rgb(215, 214, 214);
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  gap: 50px;
+}
+.workshop-text,
+.conference-text {
+  text-align: right;
+  padding-right: 50px;
+  font-size: 25px;
+  font-weight: 400;
+  color: var(--color-1);
+}
+.conference-text {
+  text-align: right;
+  padding-right: 50px;
+}
+.time {
+  text-align: right;
+  padding-right: 50px;
+}
+td {
+  color: var(--color-3);
+  font-weight: 400;
+}
+.text-color {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-1);
+}
+.text-color-2 {
+  color: gray;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.text-color-2:hover {
+  color: var(--color-3);
+}
+
+/* ------------------------------ screen 1024px -------------------------------------- */
+
+@media screen and (max-width: 1024px) {
+  .schedule-main {
+    width: 100%;
+    background-color: var(--bg-1);
+    color: var(---color-2);
+    display: flex;
+    justify-content: center;
+  }
+  .schedule-container {
+    font-weight: 300;
+    width: 100%;
+    padding: 0px 40px;
+  }
+  .nav-box2 {
+    display: flex;
+    gap: 25px;
+  }
+  .nav-box2-text1 {
+    font-size: 20px;
+  }
+  .nav-links {
+    display: flex;
+    gap: 25px;
+  }
+  .schedule-header-main {
+    background-image: linear-gradient(to right, #a9d6b3, #eeeed0);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .schedule-header-container {
+    font-weight: 400;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 50px 40px;
+  }
+  .schedule-header-text1 {
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--color-1);
+  }
+  .schedule-header-text2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: gray;
+  }
+  .schedule-content-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .schedule-content-container {
+    width: 100%;
+    padding: 0px 40px;
+  }
+  table {
+    width: 100%;
+  }
+  .table1 {
+    height: 450px;
+  }
+  .table2 {
+    height: 850px;
+  }
+  .table3 {
+    height: 500px;
+  }
+  .width {
+    width: 100%;
+  }
+  tr {
+    height: 35px;
+  }
+  .border {
+    width: 90%;
+    border-bottom: 1px solid rgb(215, 214, 214);
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    gap: 50px;
+  }
+  .workshop-text {
+    text-align: right;
+    padding-right: 40px;
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--color-1);
+  }
+  .conference-text {
+    text-align: right;
+    font-size: 25px;
+
+    padding-right: 40px;
+  }
+  .time {
+    font-size: 15px;
+    padding-right: 40px;
+  }
+  td {
+    color: var(--color-3);
+    font-weight: 400;
+  }
+  .text-color {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--color-1);
+  }
+  .text-color-2 {
+    color: gray;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .text-color-2:hover {
+    color: var(--color-3);
+  }
+  .footer-main {
+    width: 100%;
+    color: var(--text-color2);
+    display: flex;
+    justify-content: center;
+    background-color: var(--background);
+  }
+  .footer-container {
+    width: 100%;
+    padding: 40px;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-text1 {
+    color: var(--text-color1);
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .footer-links {
+    display: flex;
+    gap: 10px;
+  }
+  .footer-links a {
+    color: var(--text-color2);
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    transition: all 0.2s;
+  }
+  a:hover {
+    color: var(--text-color1);
+  }
+}
+
+/* ------------------------------ screen 768px -------------------------------------- */
+
+@media screen and (max-width: 768px) {
+  .schedule-main {
+    width: 100%;
+    background-color: var(--bg-1);
+    color: var(---color-2);
+    display: flex;
+    justify-content: center;
+  }
+  .schedule-container {
+    font-weight: 300;
+    width: 100%;
+    padding: 0px 40px;
+  }
+  .nav-box2 {
+    display: flex;
+    gap: 25px;
+  }
+  .nav-box2-text1 {
+    font-size: 20px;
+  }
+  .nav-links {
+    display: flex;
+    gap: 25px;
+  }
+  .schedule-header-main {
+    background-image: linear-gradient(to right, #a9d6b3, #eeeed0);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .schedule-header-container {
+    font-weight: 400;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 50px 40px;
+  }
+  .schedule-header-text1 {
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--color-1);
+  }
+  .schedule-header-text2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: gray;
+  }
+  .schedule-content-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .schedule-content-container {
+    width: 100%;
+    padding: 0px 40px;
+  }
+  table {
+    width: 100%;
+  }
+  .table1 {
+    height: 350px;
+  }
+  .table2 {
+    height: 550px;
+  }
+  .table3 {
+    height: 500px;
+  }
+  .width {
+    width: 100%;
+  }
+  tr {
+    height: 25px;
+  }
+  .border {
+    width: 90%;
+    border-bottom: 1px solid rgb(215, 214, 214);
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    gap: 50px;
+  }
+  .workshop-text {
+    text-align: right;
+    padding-right: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-1);
+  }
+  .conference-text {
+    text-align: right;
+    font-size: 12px;
+
+    padding-right: 20px;
+  }
+  .time {
+    font-size: 10px;
+    padding-right: 20px;
+  }
+  td {
+    color: var(--color-3);
+    font-weight: 400;
+  }
+  .text-color {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-1);
+  }
+  .text-color-2 {
+    color: gray;
+    font-size: 10px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .text-color-2:hover {
+    color: var(--color-3);
+  }
+  .footer-main {
+    width: 100%;
+    color: var(--text-color2);
+    display: flex;
+    justify-content: center;
+    background-color: var(--background);
+  }
+  .footer-container {
+    width: 100%;
+    padding: 20px;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-text1 {
+    color: var(--text-color1);
+    font-size: 12px;
+  }
+  .footer-links {
+    display: flex;
+    gap: 10px;
+  }
+  .footer-links a {
+    color: var(--text-color2);
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-weight: 200;
+    font-size: 8px;
+    transition: all 0.2s;
+  }
+  a:hover {
+    color: var(--text-color1);
+  }
+}
+
+/* ------------------------------ screen 600px -------------------------------------- */
+
+@media screen and (max-width: 600px) {
+  .schedule-main {
+    width: 100%;
+    background-color: var(--bg-1);
+    color: var(---color-2);
+    display: flex;
+    justify-content: center;
+  }
+  .schedule-container {
+    font-weight: 300;
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .nav-box2 {
+    display: flex;
+    gap: 15px;
+  }
+  .nav-box2-text1 {
+    font-size: 18px;
+  }
+  .schedule-header-main {
+    background-image: linear-gradient(to right, #a9d6b3, #eeeed0);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .schedule-header-container {
+    font-weight: 400;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 50px 20px;
+  }
+  .schedule-header-text1 {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--color-1);
+  }
+  .schedule-header-text2 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: gray;
+  }
+  .schedule-content-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .schedule-content-container {
+    width: 100%;
+    padding: 0px 20px;
+  }
+  table {
+    width: 380px;
+  }
+  .table1 {
+    height: 200px;
+  }
+  .table2 {
+    height: 350px;
+  }
+  .table3 {
+    height: 200px;
+  }
+  .width {
+    width: 100%;
+  }
+  tr {
+    height: 25px;
+  }
+  .border {
+    width: 90%;
+    border-bottom: 1px solid rgb(215, 214, 214);
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    gap: 50px;
+  }
+  .workshop-text {
+    text-align: right;
+    padding-right: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-1);
+  }
+  .conference-text {
+    text-align: right;
+    font-size: 12px;
+
+    padding-right: 20px;
+  }
+  .time {
+    font-size: 10px;
+    padding-right: 20px;
+  }
+  td {
+    color: var(--color-3);
+    font-weight: 400;
+  }
+  .text-color {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-1);
+  }
+  .text-color-2 {
+    color: gray;
+    font-size: 10px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .text-color-2:hover {
+    color: var(--color-3);
+  }
+  .footer-main {
+    width: 100%;
+    color: var(--text-color2);
+    display: flex;
+    justify-content: center;
+    background-color: var(--background);
+  }
+  .footer-container {
+    width: 100%;
+    padding: 20px;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-text1 {
+    color: var(--text-color1);
+    font-size: 12px;
+  }
+  .footer-links {
+    display: flex;
+    gap: 10px;
+  }
+  .footer-links a {
+    color: var(--text-color2);
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-weight: 200;
+    font-size: 8px;
+    transition: all 0.2s;
+  }
+  a:hover {
+    color: var(--text-color1);
+  }
+}

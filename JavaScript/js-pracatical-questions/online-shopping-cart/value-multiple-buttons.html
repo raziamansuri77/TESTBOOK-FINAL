@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .container {
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .btn {
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cart Value: <span id="cart-value">0</span></h1>
+      <button class="btn" id="btn1">Add $10</button>
+      <button class="btn" id="btn2">Add $20</button>
+      <button class="btn" id="btn3">Add $30</button>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const cartValue = document.getElementById("cart-value");
+        const btn1 = document.getElementById("btn1");
+        const btn2 = document.getElementById("btn2");
+        const btn3 = document.getElementById("btn3");
+
+        let value = 0;
+
+        btn1.addEventListener("click", function () {
+          value += 10;
+          updateCartValue();
+        });
+
+        btn2.addEventListener("click", function () {
+          value += 20;
+          updateCartValue();
+        });
+
+        btn3.addEventListener("click", function () {
+          value += 30;
+          updateCartValue();
+        });
+
+        function updateCartValue() {
+          cartValue.textContent = value;
+        }
+      });
+    </script>
+  </body>
+</html>

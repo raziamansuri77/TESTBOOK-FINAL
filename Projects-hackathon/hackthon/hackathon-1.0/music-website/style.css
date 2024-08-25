@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: var(--color1);
+}
+:root {
+  --bg-1: #333333;
+  --bg-2: #5e5d5d;
+  --bg-3: #252529;
+  --bg-5: #f4f4f4;
+  --btn-1: #b90415;
+  --btn-2: #224e96;
+  --btn-hover-1: #e11a2e;
+  --btn-hover-2: #245ebd;
+  --color1: #ffffff;
+}
+/* ----------------------------------------navbar start---------------------------------------- */
+.nav-main {
+  position: fixed;
+  width: 100%;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-1);
+  padding-right: 20px;
+}
+
+.links {
+  display: flex;
+}
+.link,
+.logo {
+  padding: 10px;
+  cursor: pointer;
+}
+a {
+  padding: 10px 20px;
+  text-decoration: none;
+  list-style: none;
+  color: var(--color1);
+}
+.link:hover,
+.logo:hover {
+  background-color: var(--bg-2);
+}
+.menu-icon {
+  display: none;
+}
+
+/* ----------------------------------------navbar end ---------------------------------------- */
+
+/* ----------------------------------------home start ---------------------------------------- */
+.home-main {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/home-bg.jpeg");
+  background-size: 100% 100%;
+  color: var(--color1);
+}
+.home-container {
+  width: 100%;
+  height: 93%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.music-container,
+.video-container,
+.home-content,
+.after-video-container {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 40px 0px;
+}
+.home-content {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+h1 {
+  font-size: 55px;
+}
+.text1,
+.music-text2,
+.video-text1,
+.after-video-text1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.text2,
+.music-text3,
+.video-text2,
+.after-video-text2 {
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* -------------------------------------------home end ----------------------------------------  */
+
+/*  ----------------------------------------music start ---------------------------------------- */
+.music-main {
+  width: 100%;
+  background-color: var(--bg-3);
+  display: flex;
+  justify-content: center;
+}
+
+.music-text1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.music-btn,
+.video-btn {
+  background-color: var(--btn-1);
+  padding: 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.music-btn:hover {
+  background-color: var(--btn-hover-1);
+}
+/* ----------------------------------------music end --------------------------------------------- */
+
+/* ----------------------------------------video start --------------------------------------------- */
+.video-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+.video-text1,
+.video-text2 {
+  color: rgb(88, 85, 85);
+}
+.video-text2 {
+  font-size: 20px;
+}
+.video-btn {
+  background-color: var(--btn-2);
+}
+.video-btn:hover {
+  background-color: var(--btn-hover-2);
+}
+/* ----------------------------------------video end --------------------------------------------- */
+
+/* ----------------------------------------after-video start --------------------------------------------- */
+
+.after-video {
+  width: 100%;
+  height: 500px;
+  background-image: url("/images/section-bg.jpeg");
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ----------------------------------------after-video end --------------------------------------------- */
+/* ----------------------------------------cards start --------------------------------------------- */
+.cards-main {
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-5);
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 75%;
+  height: 400px;
+  gap: 40px;
+  padding: 40px 0px;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card2-text1,
+.card2-text2,
+.card2-text3,
+.card2-text4,
+.fa-chevron-right {
+  color: var(--bg-1);
+}
+.card2-text1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+/* ----------------------------------------cards end --------------------------------------------- */
+/* ----------------------------------------footer-bottom start --------------------------------------------- */
+.footer-main {
+  width: 100%;
+  background-color: var(--bg-3);
+  display: flex;
+  justify-content: center;
+}
+.footer-container {
+  width: 75%;
+  height: 250px;
+  display: flex;
+  gap: 50px;
+}
+.shop,
+.store,
+.education,
+.about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.shop-text1,
+.store-text1,
+.education-text1,
+.about-text1 {
+  font-size: 20px;
+  color: var(--color1);
+}
+.shop-text2 a,
+.store-text2 a,
+.education-text2 a,
+.about-text2 a {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  color: #c1bebe;
+  font-size: 15px;
+}
+.footer-bottom {
+  width: 100%;
+  padding: 30px 0px;
+  background-color: var(--bg-1);
+  text-align: center;
+  word-spacing: 2px;
+}
+.hr {
+  width: 100%;
+  height: 0.2px;
+  background-color: rgb(134, 134, 134);
+}
+/* ----------------------------------------footer-bottom end --------------------------------------------- */
+
+/* ----------------------------------------media-screen-1024 start --------------------------------------------- */
+
+@media screen and (max-width: 1024px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .home-content,
+  .music-container,
+  .after-video-container,
+  .video-container,
+  .cards-container {
+    width: 85%;
+  }
+
+  .video-img {
+    width: 100%;
+  }
+
+  .after-video-text1 {
+    font-size: 32px;
+    text-align: center;
+  }
+  .cards-container {
+    height: 100%;
+    display: flex;
+  }
+  .footer-main {
+    display: flex;
+  }
+}
+
+/* ----------------------------------------media-screen-1024 end --------------------------------------------- */
+
+/* ----------------------------------------media-screen-768 start --------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+  .music-container,
+  .after-video-container,
+  .video-container,
+  .cards-container {
+    width: 85%;
+  }
+
+  .video-img {
+    width: 100%;
+  }
+
+  .after-video-text1 {
+    font-size: 32px;
+    text-align: center;
+  }
+  .cards-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-main {
+    display: none;
+  }
+}
+
+/* ----------------------------------------media-screen-768 end --------------------------------------------- */
+
+/* ----------------------------------------media-screen-600 start --------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+  .link {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  .home-main {
+    width: 100%;
+    height: 50vh;
+    background-image: url("./images/home-bg.jpeg");
+    background-size: 100% 100%;
+    color: var(--color1);
+  }
+  .text1,
+  .video-text1,
+  .after-video-text1 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .music-text2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .text2 {
+    display: none;
+  }
+  .music-text4 {
+    text-align: center;
+  }
+  .music-text3,
+  .video-text2,
+  .after-video-text2 {
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .video-img {
+    width: 100%;
+  }
+  .after-video {
+    height: 100%;
+    padding: 80px 0px;
+  }
+  .after-video-text1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .cards-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-main {
+    display: none;
+  }
+}
+/* ----------------------------------------media-screen-600 end --------------------------------------------- */

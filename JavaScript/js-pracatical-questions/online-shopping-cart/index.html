@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online-Shopping</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./RM.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <h1>Shopping Cart</h1>
+      <nav>
+        <div class="logo"></div>
+        <div class="search">
+          <input
+            class="search-input"
+            type="text"
+            placeholder="Search your product"
+          />
+        </div>
+        <div class="cart">
+          <i class="fa-solid fa-cart-plus"></i>
+          <div id="value">0</div>
+        </div>
+      </nav>
+      <div class="container">
+        <div id="items">
+          <div class="item">
+            <img
+              src="https://economictimes.indiatimes.com/thumb/msid-60188028,width-1200,height-900,resizemode-4,imgsize-120082/looking-for-a-new-job-how-about-shopping-for-someone-else-at-rs-25000-per-day.jpg?from=mdr"
+              alt=""
+            />
+            <p>Item 1-$10</p>
+            <button onclick="addItem(10)" id="add-cart" class="cart-value">
+              Add to cart
+            </button>
+          </div>
+          <div class="item">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkdZHWoTBO95siqsehSDzQ77NjJu6mv8FdYA&usqp=CAU"
+              alt=""
+            />
+
+            <p>Item 1-$20</p>
+            <button onclick="addItem(20)" class="cart-value">
+              Add to cart
+            </button>
+          </div>
+          <div class="item">
+            <img
+              src="https://images.pexels.com/videos/2016731/free-video-2016731.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt=""
+            />
+
+            <p>Item 1-$30</p>
+            <button onclick="addItem(30)" class="cart-value">
+              Add to cart
+            </button>
+          </div>
+          <div class="item">
+            <img src="https://etimg.etb2bimg.com/photo/105781118.cms" alt="" />
+
+            <p>Item 1-$40</p>
+            <button onclick="addItem(40)" class="cart-value">
+              Add to cart
+            </button>
+          </div>
+        </div>
+        <div id="cart">
+          <h2>Cart</h2>
+          <ul id="cart-items"></ul>
+          <p>Total Price:$ <span id="total-price">0</span></p>
+          <button onclick="applyDiscount()">Apply Discount</button>
+          <p id="discount-msg"></p>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

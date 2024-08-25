@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>user-data</title>
+  </head>
+  <body>
+    <h1>User Data</h1>
+    <div class="container_1">
+      <input type="text" id="firstname" placeholder="Enter your fisrt name:" />
+      <input type="text" id="lastname" placeholder="Enter your last name:" />
+      <input type="number" id="lname" placeholder="Enter your last name:" />
+      <input type="button" value="submit" onclick="displayData()" />
+    </div>
+    <p id="userData"></p>
+    <script>
+      function displayData() {
+        let fName = document.getElementById("firstname").value;
+        let userData = document.getElementById("userData");
+        userData.innerHTML = `first name:${fName}`;
+      }
+      //displayData();
+    </script>
+  </body>
+</html>

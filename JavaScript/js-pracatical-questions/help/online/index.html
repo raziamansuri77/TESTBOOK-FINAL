@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Shopping Cart</h1>
+      <div id="items">
+        <div class="item">
+          <img
+            src="https://media.licdn.com/dms/image/C5603AQGwCZsqPIfMLg/profile-displayphoto-shrink_800_800/0/1616918444862?e=2147483647&v=beta&t=RNFSlAiMj2MoVcq_xWYplPQrjumWzpkUNFZFq1RxQsQ"
+            alt="Item 1"
+          />
+          <p>Item 1 - $10</p>
+          <button onclick="addItem(10)">Add to Cart</button>
+        </div>
+        <div class="item">
+          <img
+            src="https://media.licdn.com/dms/image/C5603AQGwCZsqPIfMLg/profile-displayphoto-shrink_800_800/0/1616918444862?e=2147483647&v=beta&t=RNFSlAiMj2MoVcq_xWYplPQrjumWzpkUNFZFq1RxQsQ"
+            alt="Item 2"
+          />
+          <p>Item 2 - $20</p>
+          <button onclick="addItem(20)">Add to Cart</button>
+        </div>
+        <div class="item">
+          <img
+            src="https://media.licdn.com/dms/image/C5603AQGwCZsqPIfMLg/profile-displayphoto-shrink_800_800/0/1616918444862?e=2147483647&v=beta&t=RNFSlAiMj2MoVcq_xWYplPQrjumWzpkUNFZFq1RxQsQ"
+            alt="Item 3"
+          />
+          <p>Item 3 - $30</p>
+          <button onclick="addItem(30)">Add to Cart</button>
+        </div>
+      </div>
+      <div id="cart">
+        <h2>Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total Price: $<span id="total-price">0</span></p>
+        <button onclick="applyDiscount()">Apply Discount</button>
+        <p id="discount-msg"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

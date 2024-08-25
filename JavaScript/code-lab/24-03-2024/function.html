@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //function show() {
+      //let a = 9;
+      //let b = "peter";
+      //return a;
+      // console.log(b);
+      //}
+      // show();
+
+      //question1
+      class Rectangle {
+        constructor(width, height) {
+          this.width = width;
+          this.height = height;
+        }
+        area() {
+          return this.width * this.height;
+        }
+      }
+      let s = new Rectangle(11, 12);
+      console.log(s.area());
+      //constructor(3, 2);
+
+      //question-2
+      function outer() {
+        var x = 11;
+        function inner() {
+          console.log(x);
+        }
+        x = 20;
+        return inner();
+      }
+      var closureFun = outer;
+      closureFun();
+
+      //question-3
+      function generaterFunction() {
+        var count = 0;
+        return function () {
+          //return count++;
+          return ++count;
+        };
+      }
+      var counter = generaterFunction();
+      console.log(counter());
+      console.log(counter());
+
+      const a = 9;
+      console.log(a++);
+      console.log(a);
+      console.log(++a);
+    </script>
+  </body>
+</html>

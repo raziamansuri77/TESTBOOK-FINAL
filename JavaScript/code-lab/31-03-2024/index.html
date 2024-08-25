@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1>Student Details</h1>
+    <form action="" id="studentForm">
+      <label for="studentname">Student Name:</label>
+      <input type="text" id="studentname" required />
+      <br />
+      <br />
+      <label for="coursename">Course Name:</label>
+      <input type="text" id="coursename" required />
+      <br />
+      <br />
+
+      <label for="studentUID">Student UID:</label>
+      <input type="text" id="studentUID" required />
+      <br />
+      <br />
+      <label for="studentmarks">Student Marks:</label>
+      <input type="text" id="studentmarks" required />
+      <br /><br />
+      <button type="submit" class="btn btn-success">Add Student</button>
+    </form>
+    <h2>Highest Marks:</h2>
+    <ul id="highscores"></ul>
+    <h2>All Student Details:</h2>
+    <ol id="allStudents"></ol>
+
+    <script>
+      const studentForm = document.getElementById("studentForm");
+      let allStudents = document.getElementById("allStudents");
+      let students = [];
+      studentForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const studentname = document.getElementById("studentname").value;
+        const coursename = document.getElementById("coursename").value;
+        const studentUID = document.getElementById("studentUID").value;
+        const studentmarks = document.getElementById("studentmarks").value;
+        console.log(studentname, coursename.studentUID, studentmarks);
+        let studentdata = {
+          studentname,
+          coursename,
+          studentUID,
+          studentmarks,
+        };
+        students.push(studentdata);
+        console.log();
+        displayStudents();
+      });
+      const displayStudents = () => {
+        allStudents.innerHTML = "";
+        highscores.innerHTML = "";
+        console.log("students array", students);
+        students.forEach((student) => {
+          const listitem = document.createElement("li");
+          listitem.textContent = `Name:${student.studentname},course:${student.coursename},uid:${student.studentUID},marks:${student.studentmarks}`;
+          allStudents.appendChild(listitem);
+          if (student.studentmarks > 80) {
+            const highscoreList = document.createElement("li");
+            highscoreList.textContent = `Name:${student.studentname},course:${student.coursename},uid:${student.studentUID},marks:${student.studentmarks}`;
+            highscores.appendChild(highscoreList);
+          }
+        });
+      };
+    </script>
+  </body>
+</html>

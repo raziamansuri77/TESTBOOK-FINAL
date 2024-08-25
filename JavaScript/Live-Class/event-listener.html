@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #demo1,
+      #demo2 {
+        background-color: antiquewhite;
+        margin: 20px;
+        padding: 20px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="demo1">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptate?
+      Repellat, quidem doloribus! Accusantium reprehenderit quia dolore totam
+      unde. Inventore, mollitia reiciendis eaque rerum dignissimos doloribus
+      corrupti eum necessitatibus reprehenderit.
+    </div>
+    <div id="demo2">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptate?
+      Repellat, quidem doloribus! Accusantium reprehenderit quia dolore totam
+      unde. Inventore, mollitia reiciendis eaque rerum dignissimos doloribus
+      corrupti eum necessitatibus reprehenderit.
+    </div>
+    <button id="btn" onClick=" show()">Click for text</button>
+  </body>
+  <script>
+    function show() {
+      document.getElementById("demo1").style.display = "block";
+      document.getElementById("demo2").style.display = "none";
+    }
+  </script>
+</html>

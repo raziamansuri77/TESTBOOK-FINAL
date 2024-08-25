@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Addition of two numbers</title>
+  </head>
+  <body>
+    <h1>Addition of two numbers</h1>
+    <input type="number" id="fnum" placeholder="Enter first no:" />
+    <input type="number" id="snum" placeholder="Enter second no:" />
+    <input type="button" value="sum" onclick="sum()" />
+    <p id="text"></p>
+    <script>
+      function sum() {
+        let num1 = document.getElementById("fnum").value;
+        let num2 = document.getElementById("snum").value;
+        let numSum = document.getElementById("text");
+        numSum.innerHtml = `Fisrt num:${fnum} Second num:${snum}`;
+      }
+    </script>
+  </body>
+</html>

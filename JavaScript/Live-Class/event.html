@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event</title>
+  </head>
+  <body>
+    <h1 id="heading">This is Heading...</h1>
+    <p id="pera">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, fuga
+      officiis totam, sequi nisi aliquam perferendis error, facere harum officia
+      commodi voluptate. Delectus explicabo minus rerum doloremque minima
+      quisquam tempore.
+    </p>
+    <button id="btn">Click Me</button>
+    <script>
+      let heading = document.getElementById("heading");
+      let pera = document.getElementById("pera");
+      let btn = document.getElementById("btn");
+      heading.addEventListener("mouseover", () => {
+        heading.style.backgroundColor = "red";
+      });
+      heading.addEventListener("mouseout", () => {
+        heading.style.backgroundColor = "green";
+      });
+      btn.addEventListener("click", () => {
+        pera.style.border = "2px solid red";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Match Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .container {
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .card {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        background-color: lightgreen;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      .card img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fruit Match Game</h1>
+      <div id="game-board"></div>
+      <p>Time Left: <span id="timer">60</span> seconds</p>
+      <button id="start-btn">Start Game</button>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const fruits = ["apple", "banana", "orange", "grape", "watermelon"];
+        const gameBoard = document.getElementById("game-board");
+        const timerDisplay = document.getElementById("timer");
+        const startBtn = document.getElementById("start-btn");
+
+        let timer;
+        let secondsLeft;
+
+        startBtn.addEventListener("click", startGame);
+
+        function startGame() {
+          startBtn.disabled = true;
+          secondsLeft = 60;
+          renderCards();
+          timer = setInterval(updateTimer, 1000);
+        }
+
+        function renderCards() {
+          gameBoard.innerHTML = "";
+          for (let i = 0; i < 10; i++) {
+            const randomFruit =
+              fruits[Math.floor(Math.random() * fruits.length)];
+            const card = document.createElement("div");
+            card.classList.add("card");
+            card.dataset.fruit = randomFruit;
+            card.innerHTML = `<img src="images/${randomFruit}.png" alt="${randomFruit}">`;
+            card.addEventListener("click", handleCardClick);
+            gameBoard.appendChild(card);
+          }
+        }
+
+        function handleCardClick(event) {
+          const clickedCard = event.target.parentElement;
+          const matchedCards = document.querySelectorAll(
+            `[data-fruit="${clickedCard.dataset.fruit}"]`
+          );
+          if (matchedCards.length === 2) {
+            matchedCards.forEach((card) => card.classList.add("matched"));
+          }
+          checkGameEnd();
+        }
+
+        function updateTimer() {
+          secondsLeft--;
+          timerDisplay.textContent = secondsLeft;
+          if (secondsLeft === 0) {
+            clearInterval(timer);
+            alert("Time's up! Game over!");
+            resetGame();
+          }
+        }
+
+        function checkGameEnd() {
+          const matchedCount = document.querySelectorAll(".matched").length;
+          if (matchedCount === 10) {
+            clearInterval(timer);
+            alert("Congratulations! You've matched all the fruits!");
+            resetGame();
+          }
+        }
+
+        function resetGame() {
+          startBtn.disabled = false;
+          timerDisplay.textContent = "60";
+          gameBoard.innerHTML = "";
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program-4</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      let num = prompt("Enter your number:");
+      function checkNum() {
+        if (num % 3 == 0 && num % 5 == 0) {
+          document.getElementById("demo").innerHTML = "Fizz";
+        } else if (num % 5 == 0) {
+          document.getElementById("demo").innerHTML = "Buzz";
+        } else if (num % 3 == 0) {
+          document.getElementById("demo").innerHTML = "FizzBuzz";
+        }
+      }
+
+      document.getElementById("demo").innerHTML = "Nothing";
+
+      checkNum();
+    </script>
+  </body>
+</html>
